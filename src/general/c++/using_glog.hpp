@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file using_glog.hpp
  * @author 谭xx (2112216825@qq.com)
  * @brief
  * @version 0.1
@@ -9,13 +9,14 @@
  *
  */
 
-#define DEMO_GENERAL_USING_GLOG
-#ifdef DEMO_GENERAL_USING_GLOG
+#define DEMO_GENERAL_USING_GLOG_HPP_
+#ifdef DEMO_GENERAL_USING_GLOG_HPP_
 
-#include <glog/logging.h>
+#include "glog/logging.h"
+#include <string>
+#include <sstream>
 #include <mutex>
 #include <memory>
-
 /**
  * @brief glog库的封装，使用懒汉单例模式
  *
@@ -27,7 +28,9 @@ class Glog
 public:
     static std::shared_ptr<Glog> GetSingleton(const char *argv);
     template <class... Args>
-    constexpr void Log(const int info_level, Args... args);
+    constexpr void Log(const int info_level, Args &&...args);
+    template <class... Args>
+    constexpr void Log(Args &&...args);
     ~Glog();
 };
 
@@ -74,28 +77,51 @@ Glog::~Glog()
  * @param args 信息
  */
 template <class... Args>
-constexpr void Glog::Log(const int info_level, Args... args)
+constexpr void Glog::Log(const int info_level, Args &&...args)
 {
+    // 格式化
+    auto fmt = [](auto arg)
+    {
+        std::string str_arg;
+        std::stringstream str_tmp;
+        str_tmp << arg;
+        str_tmp >> str_arg;
+        return str_arg;
+    };
     switch (info_level)
     {
     case 0:
-        ((LOG(INFO) << args), ...);
+        LOG(INFO) << (fmt(args) + ...);
         break;
     case 1:
-        ((LOG(WARNING) << args), ...);
+        LOG(WARNING) << (fmt(args) + ...);
         break;
     case 2:
-        ((LOG(ERROR) << args), ...);
+        LOG(ERROR) << (fmt(args) + ...);
         break;
     case 3:
-        ((LOG(FATAL) << args), ...);
+        LOG(FATAL) << (fmt(args) + ...);
         break;
     default:
+        LOG(INFO) << (fmt(args) + ...);
         break;
     }
 
     return;
 }
+/**
+ * @brief 重载,不输入信息等级默认INFO
+ * 
+ * @tparam Args 同上
+ * @param args 同上
+ */
+template <class... Args>
+constexpr void Glog::Log(Args &&...args)
+{
+    Log(0,args...);
+    return;
+}
+
 /**
  * @brief 下面是单例模式的实现
  *
@@ -117,4 +143,4 @@ std::shared_ptr<Glog> Glog::GetSingleton(const char *argv)
     return glog;
 }
 
-#endif // DEMO_GENERAL_USING_GLOG
+#endif // DEMO_GENERAL_USING_GLOG_HPP_

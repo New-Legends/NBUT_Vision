@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file using_python.hpp
  * @author 谭xx (2112216825@qq.com)
  * @brief 
  * @version 0.1
@@ -10,8 +10,8 @@
  */
 
 
-#define DEMO_GENERAL_USING_PYTHON
-#ifdef  DEMO_GENERAL_USING_PYTHON
+#define DEMO_GENERAL_USING_PYTHON_HPP_
+#ifdef  DEMO_GENERAL_USING_PYTHON_HPP_
 
 #include <pybind11/pybind11.h>
 #include <pybind11/embed.h>
@@ -20,7 +20,8 @@
 
 
 namespace py = pybind11;
-// 调用python
+
+
 /**
  * @brief 调用python的类
  * 只封装了了调用模块和类
@@ -88,4 +89,4 @@ const py::object& UsingPython::GetObject(const char* object_name)
   return object_;
 }
 
-#endif  //DEMO_GENERAL_USING_PYTHON
+#endif  //DEMO_GENERAL_USING_GLOG_HPP_

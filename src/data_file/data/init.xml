@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<opencv_storage>
+    <int>100</int>
+    <bool_true>1</bool_true>
+    <bool_false>0</bool_false>
+    <float>9.9870002746582031e+001</float>
+    <string>"this is a string"</string>
+    <slParams>
+        <slParams_projWidth>1140</slParams_projWidth>
+        <slParams_projHeight>912</slParams_projHeight>
+        <slParams_camWidth>1024</slParams_camWidth>
+        <slParams_camHeight>1280</slParams_camHeight>
+        <slParams_colEncode>1</slParams_colEncode>
+        <slParams_rowEncode>0</slParams_rowEncode>
+    </slParams>
+    <point>
+  2 3</point>
+</opencv_storage>

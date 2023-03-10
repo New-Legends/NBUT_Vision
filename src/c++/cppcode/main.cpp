@@ -40,8 +40,9 @@ int main(int argc,char* argv[])
 
     //打印日志的
     auto glog = Glog::GetSingleton(argv[0]);
-    glog->Log(1,"1111111111\n\n\n");
-    glog->Log(2,"2222222222\n\n\n");
+    glog->Log("这里是INFO ",123+456);
+    glog->Log(1,"这里是WARNING\n",&"111");
+    glog->Log(2,"2222222222");
     //!glog->Log(3,"3333333333\n\n\n"); //!会让程序崩溃，在严重错误的时候使用
     
     return 0;

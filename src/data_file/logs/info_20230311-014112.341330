@@ -1,0 +1,8 @@
+Log file created at: 2023/03/11 01:41:12
+Running on machine: XiaoXinAir
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20230311 01:41:12.594002 341330 using_glog.hpp:94] 这是一个demo测试测试中测试结束
+I20230311 01:41:12.607637 341330 using_glog.hpp:94] 这里是INFO579
+W20230311 01:41:12.607673 341330 using_glog.hpp:97] 这里是WARNING0x5555555893b3
+E20230311 01:41:12.607764 341330 using_glog.hpp:100] 2222222222

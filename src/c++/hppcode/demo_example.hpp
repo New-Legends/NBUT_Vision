@@ -38,16 +38,15 @@ public:
 /// @tparam ...Args
 /// @param ...args 传入的数据
 template <class... Args>
-void Demo::Print(Args... args)
+void Demo::Print(Args ...args)
 {
     if (!is_print_)
         return;
-    std::cout << KPRINT_TEXT_ << "\n";
     try
     {
         // ((std::cout << args << " "),...);
         glog = Glog::GetSingleton("demo_example");
-        glog->Log(0,args...);
+        glog->Log(0,KPRINT_TEXT_,args...);
         // std::endl(std::cout);
     }
     catch (const std::exception &e)

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "demo_example",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_example-Debug-a220069351f7b1722740.json",
+					"name" : "demo_example",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/luoyebai/code/\u89c6\u89c9\u76f8\u5173\u4ee3\u7801/\u89c6\u89c9\u5de5\u7a0b/EnergyOrgan/demo/demo_example/build",
+		"source" : "/home/luoyebai/code/\u89c6\u89c9\u76f8\u5173\u4ee3\u7801/\u89c6\u89c9\u5de5\u7a0b/EnergyOrgan/demo/demo_example"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

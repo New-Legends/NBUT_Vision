@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/luoyebai/code/视觉相关代码/视觉工程/EnergyOrgan/demo/demo_example/build",
+  "command": "/usr/bin/g++ -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/home/luoyebai/code/视觉相关代码/视觉工程/EnergyOrgan/demo/demo_example/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/include/python3.10 -g -std=gnu++17 -o CMakeFiles/demo_example.dir/src/c++/cppcode/main.cpp.o -c /home/luoyebai/code/视觉相关代码/视觉工程/EnergyOrgan/demo/demo_example/src/c++/cppcode/main.cpp",
+  "file": "/home/luoyebai/code/视觉相关代码/视觉工程/EnergyOrgan/demo/demo_example/src/c++/cppcode/main.cpp"
+}
+]
