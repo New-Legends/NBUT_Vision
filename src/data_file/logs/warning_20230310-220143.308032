@@ -1,0 +1,10 @@
+Log file created at: 2023/03/10 22:01:43
+Running on machine: XiaoXinAir
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20230310 22:01:43.087054 308032 using_glog.hpp:85] 1111111111
+
+
+E20230310 22:01:43.087157 308032 using_glog.hpp:88] 2222222222
+
+
