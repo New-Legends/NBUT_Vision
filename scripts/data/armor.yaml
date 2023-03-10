@@ -1,0 +1,8 @@
+path: ../yolov5test/Armor
+train: images/train2017
+val: images/val2017
+test:  # test images (optional)
+
+names:
+  0: BLUE
+  1: RED
