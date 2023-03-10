@@ -1,1 +1,2 @@
 # NBUT_Vision
+这是宁波工程学院newlegends战队视觉组的代码仓库
