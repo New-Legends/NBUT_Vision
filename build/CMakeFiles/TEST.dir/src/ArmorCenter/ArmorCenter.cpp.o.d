@@ -1,5 +1,5 @@
 CMakeFiles/TEST.dir/src/ArmorCenter/ArmorCenter.cpp.o: \
- /home/davi/rmVison4.0/src/ArmorCenter/ArmorCenter.cpp \
+ /home/davi/rmVision4.0/src/ArmorCenter/ArmorCenter.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -480,4 +480,4 @@ CMakeFiles/TEST.dir/src/ArmorCenter/ArmorCenter.cpp.o: \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \
- /home/davi/rmVison4.0/src/ArmorCenter/ArmorCenter.h
+ /home/davi/rmVision4.0/src/ArmorCenter/ArmorCenter.h

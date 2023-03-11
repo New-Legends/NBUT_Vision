@@ -1,4 +1,4 @@
-CMakeFiles/TEST.dir/main.cpp.o: /home/davi/rmVison4.0/main.cpp \
+CMakeFiles/TEST.dir/main.cpp.o: /home/davi/rmVision4.0/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -476,4 +476,4 @@ CMakeFiles/TEST.dir/main.cpp.o: /home/davi/rmVison4.0/main.cpp \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
- /home/davi/rmVison4.0/./src/ArmorCenter/ArmorCenter.h
+ /home/davi/rmVision4.0/./src/ArmorCenter/ArmorCenter.h

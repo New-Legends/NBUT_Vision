@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/davi/rmVision4.0/build",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/include/jsoncpp -isystem /usr/include/python3.10 -g -o CMakeFiles/TEST.dir/main.cpp.o -c /home/davi/rmVision4.0/main.cpp",
+  "file": "/home/davi/rmVision4.0/main.cpp"
+},
+{
+  "directory": "/home/davi/rmVision4.0/build",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/include/jsoncpp -isystem /usr/include/python3.10 -g -o CMakeFiles/TEST.dir/src/ArmorCenter/ArmorCenter.cpp.o -c /home/davi/rmVision4.0/src/ArmorCenter/ArmorCenter.cpp",
+  "file": "/home/davi/rmVision4.0/src/ArmorCenter/ArmorCenter.cpp"
+},
+{
+  "directory": "/home/davi/rmVision4.0/build",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/include/jsoncpp -isystem /usr/include/python3.10 -g -o CMakeFiles/TEST.dir/src/ArmorCenter/AngleSolve.cpp.o -c /home/davi/rmVision4.0/src/ArmorCenter/AngleSolve.cpp",
+  "file": "/home/davi/rmVision4.0/src/ArmorCenter/AngleSolve.cpp"
+},
+{
+  "directory": "/home/davi/rmVision4.0/build",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/include/jsoncpp -isystem /usr/include/python3.10 -g -o CMakeFiles/TEST.dir/src/KF/kalman.cpp.o -c /home/davi/rmVision4.0/src/KF/kalman.cpp",
+  "file": "/home/davi/rmVision4.0/src/KF/kalman.cpp"
+}
+]
