@@ -1,6 +1,6 @@
 /**
- * @file main.cpp
- * @author 谭xx (2112216825@qq.com)
+ * @file demo_example.cpp
+ * @author luoyebai (2112216825@qq.com)
  * @brief 
  * @version 0.1
  * @date 2023-03-10
@@ -14,7 +14,9 @@
 #define DEMO_DEMO_EXAMPLE_HPP_
 
 #include <iostream>
-#include"../../general/c++/using_glog.hpp"
+#include"../../general/using_glog.hpp"
+#include"../../general/using_xml.hpp"
+#include"../../general/using_python.hpp"
 
 /**
  * @brief demo测试的头文件例子

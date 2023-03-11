@@ -1,10 +1,24 @@
+import sys
+
+sys.path.insert(0, sys.path[0]+"/../general")
+sys.path.append(".")
+sys.path.append("..")
+
+import  using_xml
+from using_xml import ReadXML,WriteXML
+
 class Demo:
+
     is_print = True
 
     def __init__(self) -> None:
         print("__init__初始化\n")
+    def DemoPrint(self, *args) -> bool:
+        """_summary_
 
-    def print(self, *args) -> bool:
+        Returns:
+            bool: _description_
+        """
         if (self.is_print == False):
             return False
         else:
@@ -13,7 +27,8 @@ class Demo:
             return True
 
 
-# if __name__ == "__main__":
 demo = Demo()
-demo.print(123, 123,"\n\n\n")
-
+demo.DemoPrint(123, 123, "\n\n\n")
+data = 0
+data = ReadXML("swap.xml","slParams_camHeight",data)
+print(data)

@@ -1,7 +1,8 @@
+
 /**
  * @file using_python.hpp
- * @author 谭xx (2112216825@qq.com)
- * @brief 
+ * @author luoyebai (2112216825@qq.com)
+ * @brief python
  * @version 0.1
  * @date 2023-03-10
  * 
@@ -17,7 +18,6 @@
 #include <pybind11/embed.h>
 #include <pybind11/stl.h>
 #include <pybind11/numpy.h>
-
 
 namespace py = pybind11;
 
@@ -49,8 +49,8 @@ UsingPython::UsingPython() : pmodule_(std::make_shared<py::object>())
   // python调用
   Py_Initialize();
   PyRun_SimpleString("import sys");
-  PyRun_SimpleString("sys.path.append('../src/general/python')");
-  PyRun_SimpleString("sys.path.append('../src/python')");
+  PyRun_SimpleString("sys.path.append('../src/general/')");
+  PyRun_SimpleString("sys.path.append('../src/python/')");
 
   // PyRun_SimpleString("sys.path.append('../')");
   // py::scoped_interpreter py

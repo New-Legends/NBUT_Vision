@@ -1,14 +1,13 @@
 /**
  * @file using_glog.hpp
- * @author 谭xx (2112216825@qq.com)
- * @brief
+ * @author luoyebai (2112216825@qq.com)
+ * @brief 日志
  * @version 0.1
  * @date 2023-03-10
  *
  * @copyright Copyright (c) 2023
  *
  */
-
 #define DEMO_GENERAL_USING_GLOG_HPP_
 #ifdef DEMO_GENERAL_USING_GLOG_HPP_
 
@@ -17,6 +16,8 @@
 #include <sstream>
 #include <mutex>
 #include <memory>
+
+
 /**
  * @brief glog库的封装，使用懒汉单例模式
  *
@@ -88,6 +89,7 @@ constexpr void Glog::Log(const int info_level, Args &&...args)
         str_tmp >> str_arg;
         return str_arg;
     };
+
     switch (info_level)
     {
     case 0:

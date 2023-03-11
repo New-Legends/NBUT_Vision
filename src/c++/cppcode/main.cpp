@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
- * @author 谭xx (2112216825@qq.com)
- * @brief 框架，
+ * @author luoyebai (2112216825@qq.com)
+ * @brief 框架
  * @version 0.1
  * @date 2023-03-10
  * 
@@ -9,20 +9,16 @@
  * 
  */
 
-
-
 // TODO:将demo填入工程文件
 
 //  测试
 #include"../hppcode/demo_example.hpp"
-#include"../../general/c++/using_python.hpp"
-// #include"../../general/c++/using_glog.hpp"
 
 /**
  * @brief main
  * demo测试的框架，每个demo都应该先通过demo测试再填入项目
  * @param argc 传入参数个数 
- * @param argv 传入的字符串 [0]是程序名字
+ * @param argv 传入的字符串 argv[0]是程序名字
  * @return int 略
  */
 int main(int argc,char* argv[])
@@ -36,7 +32,7 @@ int main(int argc,char* argv[])
     //获得该脚本中的类或者函数
     auto py_class_demo = demo_python.GetObject("demo");
     //调用类的函数
-    py_class_demo.attr("print")(1234,"\n");
+    py_class_demo.attr("DemoPrint")(1234,"\n");
 
     //打印日志的
     auto glog = Glog::GetSingleton(argv[0]);
@@ -44,6 +40,12 @@ int main(int argc,char* argv[])
     glog->Log(1,"这里是WARNING\n",&"111");
     glog->Log(2,"2222222222");
     //!glog->Log(3,"3333333333\n\n\n"); //!会让程序崩溃，在严重错误的时候使用
+
+    //xml读取的
+    XML testxml("swap.xml");
+    testxml.WriteXML("slParams_camHeight",100,false);
+
+    
     
     return 0;
 }

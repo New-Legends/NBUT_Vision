@@ -377,17 +377,17 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/general/c++/using_python.hpp",
+			"path" : "src/general/using_python.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/general/c++/using_glog.hpp",
+			"path" : "src/general/using_glog.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/general/c++/using_xml.hpp",
+			"path" : "src/general/using_xml.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

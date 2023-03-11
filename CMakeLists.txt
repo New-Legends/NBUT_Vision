@@ -24,9 +24,9 @@ add_executable(
 		demo_example 
 		src/c++/cppcode/main.cpp
 		src/c++/hppcode/demo_example.hpp
-		src/general/c++/using_python.hpp
-		src/general/c++/using_glog.hpp
-		src/general/c++/using_xml.hpp
+		src/general/using_python.hpp
+		src/general/using_glog.hpp
+		src/general/using_xml.hpp
 )
 #gxiapi是大恒相机的必须链接
 target_link_libraries(demo_example ${OpenCV_LIBS} ${X11_LIBRARIES} ${CERES_LIBRARIES} gxiapi pthread)
